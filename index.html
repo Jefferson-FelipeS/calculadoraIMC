@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Menu-Hamburguer,html,css,javascript" />
+    <meta http-equiv="cache-control" content="public" />
+    <title>Calculadora-IMC</title>
+    <link rel="stylesheet" href="style.css" title="css" type="text/css" />
+  </head>
+  <body>
+    <article id="container">
+
+             <h1 id="title">calculadora imc</h1>
+         
+         <p id="paragrafOne">A classificacao do indice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutricao em criancas,adolescentes adultos e idosos.</p>
+         <p id="paragrafOne">alem de saber que o seu IMC,essa calculadora tambem indica qual deve ser o seu peso ideal para alcancar a sua melhor forma, e assim melhorar a sua qualidade de vida, garantindo o seu bem-estar.</p>
+         <p id="paragrafOne">Coloque os seus dados na calculadora a seguir e saiba qual o seu IMC:</p>
+         
+         <!-- <section id="sectionColor"> 
+            <button id="buttonColor" onclick="mudarTema();">Alterar</button>
+         </section> -->
+        
+        
+         <section id="sectionCalc">
+           
+          <section id="genero">
+            <p id="pGenero">Sexo</p>
+            <button id="man">Homem</button>
+            <button id="homan">Mulher</button>
+          </section>
+          
+          <form method="" action="" id="form">
+            
+              <label id="labelOne">Nome: </label>
+              <input type="text" name="nome" id="Campo" onkeyup="valida1();" required="required"/>
+              <span id="Obs">*Preenchimento Obrigatorio!</span>
+              
+              <label id="labelTwo">Idade: </label>
+              <div>
+              <input type="number" name="idade" id="Campo" placeholder="Ex: 18" onkeyup="valida2();" required/>
+              <span>Anos</span>
+              <span id="Obs">*Preenchimento Obrigatorio!</span>
+              </div>
+              
+              <label id="labelThree">Peso: </label>
+              <div>
+              <input type="number" name="peso" id="Campo" placeholder="Ex: 62,5" onkeyup="valida3();" required/>
+              <span>kg</span>
+              <span id="Obs">*Preenchimento Obrigatorio!</span>
+              </div>
+              
+              <label id="labelFour">Altura: </label>
+              <div>
+              <input type="number" name="altura" id="Campo" placeholder="Ex: 1.5" onkeyup="valida4();" required/>
+              <span>cm</span>
+              <span id="Obs">*Preenchimento Obrigatorio!</span>
+              </div>
+              
+              <button id="btn" >Calcular</button>
+           </form>
+         </section>
+      
+         <section id="informar">
+           
+             <h2 id="titleTwo">Resultado:</h2>
+             
+             <p id="resul">olah,<span id="mostraNome"></span>,Seu IMC e de <span id="spanResul"></span></p>
+             <p id="inforResul"><span id="textResul">...</span></p>
+           
+              <section id="Informa">Seu IMC esta abaixo do peso ,ou seja ,voce esta no nivel da magreza</section>
+              <section id="Informa">Voce esta no peso ideal para a sa altura.</section>
+              <section id="Informa"></section>
+              <section id="Informa"></section>
+              <section id="Informa"></section>
+              <section id="Informa"></section>
+         </section>
+         
+   </article>  
+    <script src="main.js"></script>
+    <script src="temaBody.js"></script>
+  </body>
+</html>
