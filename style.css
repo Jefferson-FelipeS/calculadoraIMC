@@ -19,7 +19,7 @@ body.active{
 /*======================AREA DO CONTAINER=================*/
 #container{
   width:80%;
-  height:148vh;
+  height:126vh;
   border:1px solid #000;
   display:flex;
   flex-direction:column;
@@ -60,13 +60,13 @@ body.active{
 /*===================Area=======================*/
 #sectionCalc{
   width:94%;
-  height:60%;
+  height:55%;
   background-color:#B4BBBA;
   border-radius:5px;
   box-shadow:1px 1px 1px #eee;
   display:flex;
   flex-direction:column;
-  justify-content:center;
+  align-items:center;
 }
 /* Parte dos @media */
 @media(max-width:600px){
@@ -80,7 +80,7 @@ body.active{
 
   @media(max-height:662px){
     #container{
-     height:155vh;
+     height:135vh;
    }
    #sectionCalc{
      height:68%;
@@ -88,19 +88,19 @@ body.active{
 
   @media(max-height:632px){
     #container{
-     height:165vh;
+     height:140vh;
    }
    #sectionCalc{
-     height:70%;
+     height:60%;
    }  
  }
 
   @media(max-height:590px){
     #container{
-     height:180vh;
+     height:155vh;
    }
    #sectionCalc{
-     height:90%;
+     height:70%;
    }  
   }
 }
@@ -113,31 +113,15 @@ body.active{
  }  
 }
 }
-/*=================CAMPO DOS GENEROS================*/
-#genero{
-  width: 100%;
-  height:72px;
+@media(min-height:800px){
+  #container{
+    height:115vh;
+  }
+  #sectionCalc{
+    height:70%;
+  }   
 }
-#pGenero{
-  font-size:20px;
-  font-weight:bold;
-  margin:5px 0 5px 16px;
-}
-#man,#homan{
-  width:40%;
-  height:40px;
-  margin:0 0 0px 30px;
-  border:none;
-  border-radius:10px;
-  font-weight:bold;
-  font-size:19px;
-}
-#homan{
-  margin-left:5px;
-}
-#man:hover,#homan:hover{
-  color:#fff;
-}
+
 /*==================AREA DO FORMULARIO===============*/
 #form{
   width:90%;
@@ -178,16 +162,18 @@ body.active{
 }
 #Obs{
   display:block;
+ 
 }
 
 /*==========AREA DO RESULTADO DOS NIVEIS===============*/
-/* #informar{
+#informarSection{
   width:90%;
-  height:48%;
+  height:80%;
   margin-top:20px;
   background-color:#ccc;
   display:none;
-  
+  flex-direction:column;
+  border:1px solid #000;
 }
 #titleTwo{
   margin:20px 0 20px 10px;
@@ -203,9 +189,9 @@ body.active{
 #mostraNome{
   font-weight:bold;
 }
-#Informa{
+.Informa{
   width:96%;
   height:110px;
   margin:6px;
   box-shadow:1.5px 1px 1px 3px #eee;
-} */
+}
